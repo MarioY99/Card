@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        .container {
+            display: flex;
+            background: papayawhip;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+        .item {
+            width: 50px;
+            height: 50px;
+            background: purple;
+        }
+        .container .item:nth-child(odd) {
+            background: lime;
+        }
+        .item:nth-child(odd){
+            color:violet;
+        }
+        .item:nth-child(even){
+            color:white;
+        }
+        .item {
+            text-align: center;
+            text-justify: center;
+        }
+        .caja {
+            display: flex;
+            background: chocolate;
+            height: 200px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hijo {
+            width: 30px;
+            height: 30px;
+            background: cyan;
+        }
+        .caja .hijo:nth-child(odd) {
+            background: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Fecha:</div>
+        <div class="item">22</div>
+        <div class="item">01</div>
+        <div class="item">2022</div>
+    </div>
+    <div class="caja">
+        <div class="hijo">1</div>
+        <div class="hijo">2</div>
+        <div class="hijo">3</div>
+        <div class="hijo">4</div>
+    </div>
+</body>
+</html>

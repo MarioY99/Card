@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {color :blue;}
+        div > div {
+            background: lime;
+        }
+        .part2 {
+            background: red;
+        }
+        div + section {
+            background: yellow;
+        }
+        div ~ p {
+            color: violet;
+        }
+        article > p {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+        <p>Buenas tardes</p>
+        </div>
+        <div>
+            <p>chicos</p>
+        </div>
+        <p>Chicos</p>
+    <div class="part2">Cómo están ustedes</div>
+    </div>
+    <section>
+        Me llamo Mario
+    </section>
+    <div>
+        <article>hoy es</article>
+    </div>
+    <p>19 de enero</p>
+    <article>
+        <p>Prueba selector hijo directo</p>
+    </article>
+    <section>
+        <img src="https://images.pexels.com/photos/5874630/pexels-photo-5874630.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="hand holding a balloon">
+    </section>
+    <article>
+        <p>Que bonito son los globos</p>
+    </article>
+</body>
+</html>

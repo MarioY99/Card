@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <title>Card</title>
+    <style>   
+        .card {
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            background: lightsalmon;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        img {
+            width: 100px;
+        }
+        .background-img {
+            margin-top: -50px;
+            width: 100%;
+            height: 240px;
+        }
+        .profile-photo{
+            border-radius: 50%;
+            border: 5px solid white;
+            position: relative;
+            top: -55px;
+        }
+        .username {
+            font-family: 'Rowdies', cursive;
+            margin-top: -50px;
+            font-size: 20px;
+        }
+        .profession {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            text-align: center;
+            margin-top: -22px;
+            margin-bottom: 0px;
+        }
+        .info {
+            display: flex;
+           width: 100%;
+           height: 20px;
+           justify-content: space-around;
+        }
+        .location {
+            font-family: 'Rowdies', cursive;
+        }
+        .location::before {
+            content: "🌎";
+        }
+        .correo {
+            background: none;
+            border: hidden;
+            font-family: cursive;
+        }
+        .correo:hover {
+            background: lightblue;
+        }
+        .influence {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background: salmon;
+        }
+        .followers {
+            font-family: 'Rowdies', cursive;
+            width:250px;
+            border: 2px inset lightsalmon;
+            text-align: center;
+        }
+        .following{
+            font-family: 'Rowdies', cursive;
+            width:250px;
+            border: 2px inset lightsalmon;
+            text-align: center;
+        }
+        .follow {
+            width: 100%;
+            height: 40px;
+            background: turquoise;
+            position: absolute;
+            bottom: 0;
+            margin-left: -250px;
+            border: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+    <div class="container">
+        <img class="background-img" src="https://images.pexels.com/photos/315998/pexels-photo-315998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="beach">
+        <img class="profile-photo" src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.6435-9/118405060_10224718398450341_8608524893114102041_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=MfzgPVWK6QgAX9YsnuK&_nc_ht=scontent-mia3-1.xx&oh=00_AT8_6rY-0M5NzVklhLicAlvLR87KVvhdQ8D4rZscZ8o0Rg&oe=6220D2BE" alt="profile-photo">
+        <div class="text">
+            <p class="username">Mario José Yanez Sifontes</p>
+            <p class="profession">Frontend Developer</p>
+        </div>
+        <div class="info">
+            <div class="location">
+                <p">Venezuela</p>
+            </div>
+            <div class="email">
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                    <button class="correo">Send E-mail</button>   
+                </a>
+            </div>
+        </div>
+        <div class="influence">
+           <div class="followers">
+               <p>6750</p>
+               <p>Followers</p>
+           </div>
+            <div class="following">
+                <p>452</p>
+                <p>Following</p>
+                </div>
+            </div>
+            <div class="twitter">
+                <a href="https://twitter.com/MarioYanez_">
+                <button class="follow">
+                    Follow on Twitter ✔
+                </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
